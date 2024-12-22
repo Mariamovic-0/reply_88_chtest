@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+  <title>Karakter Testi</title>
+  <style>
+    .question { margin: 20px 0; }
+    .options { margin: 10px 0; }
+    .result { margin-top: 30px; font-size: 20px; }
+    .character { margin-top: 10px; font-weight: bold; }
+    img { width: 100px; height: 100px; margin-right: 10px; }
+    .character-info { display: flex; align-items: center; }
+  </style>
+</head>
+<body>
+<button id="myButton">Butona Tıkla</button>
+<script>
+// Butona tıklama işlevi
+document.getElementById("myButton").addEventListener("click",function() {
+alert("Butona tıklandı!");
+});
+  document.getElementById("button_my_id").addEventListener("touchend",function() {
+    alert("Butona dokunuldu!");
+  });
+</script>
+</body>
+
+<h1>Karakter Testine Hoşgeldiniz!</h1>
+<form id="quiz-form">
+  <!-- Soru 1 -->
+  <div class="question">
+    <p>1. Hangi özelliğinizi en çok önemsiyorsunuz?</p>
+    <div class="options">
+      <label><input type="radio" name="q1" value="Deoksun"> Saf ve sevgi dolu.</label><br>
+      <label><input type="radio" name="q1" value="Junghwan"> Soğuk ve sakin, disiplinli.</label><br>
+      <label><input type="radio" name="q1" value="Taek"> Çalışkan ve sakin, içsel huzura sahip.</label><br>
+      <label><input type="radio" name="q1" value="Dongryong"> Eğlenceli ve esprili, arkadaş canlısı.</label><br>
+    </div>
+  </div>
+  
+  <!-- Soru 2 -->
+  <div class="question">
+    <p>2. Hangi renk sizi en çok yansıtır?</p>
+    <div class="options">
+      <label><input type="radio" name="q2" value="Sunwoo"> Yeşil – Doğal ve huzurlu.</label><br>
+      <label><input type="radio" name="q2" value="Bora"> Kırmızı – Protest ve sert.</label><br>
+      <label><input type="radio" name="q2" value="Junghwan'ın Babası"> Turuncu – Espritüel ve enerjik.</label><br>
+      <label><input type="radio" name="q2" value="Deoksun"> Pembe – Canlı ve tutkulu.</label><br>
+    </div>
+  </div>
+
+  <!-- Soru 3 -->
+  <div class="question">
+    <p>3. Hangi yemek tarzı sizin tarzınız?</p>
+    <div class="options">
+      <label><input type="radio" name="q3" value="Taek"> Yalnızca sade ve sağlıklı yemekleri severim.</label><br>
+      <label><input type="radio" name="q3" value="Dongryong"> Neşeli, renkli ve çeşitlilikten yana.</label><br>
+      <label><input type="radio" name="q3" value="Junghwan"> Klasik, ama duygusal olarak bağ kurduğum yemekler.</label><br>
+      <label><input type="radio" name="q3" value="Bora"> Klasik ve sade yemeklerden hoşlanırım.</label><br>
+    </div>
+  </div>
+
+  <!-- Soru 4 -->
+  <div class="question">
+    <p>4. En sevdiğiniz aktivite nedir?</p>
+    <div class="options">
+      <label><input type="radio" name="q4" value="Deoksun"> Uyumak.</label><br>
+      <label><input type="radio" name="q4" value="Sunwoo"> Ailemle vakit geçirmek.</label><br>
+      <label><input type="radio" name="q4" value="Dongryong"> Arkadaşlarla vakit geçirmek, komik videolar izlemek.</label><br>
+      <label><input type="radio" name="q4" value="Taek"> Huzurlu bir ortamda kitap okumak.</label><br>
+    </div>
+  </div>
+
+  <!-- Soru 5 -->
+  <div class="question">
+    <p>5. İnsanlar sizi nasıl tanımlar?</p>
+    <div class="options">
+      <label><input type="radio" name="q5" value="Junghwan"> Sessiz.</label><br>
+      <label><input type="radio" name="q5" value="Bora"> Gergin.</label><br>
+      <label><input type="radio" name="q5" value="Sunwoo"> Sakin ve dengeli.</label><br>
+      <label><input type="radio" name="q5" value="Dongryong"> Neşeli ve enerjik.</label><br>
+    </div>
+  </div>
+
+  <!-- Soru 6 -->
+  <div class="question">
+    <p>6. Hangi özellikten nefret edersiniz?</p>
+    <div class="options">
+      <label><input type="radio" name="q6" value="Taek"> Duygusal manipülasyon.</label><br>
+      <label><input type="radio" name="q6" value="Deoksun"> Yalan söylemek ve dürüst olmamak.</label><br>
+      <label><input type="radio" name="q6" value="Junghwan"> İnsanların içini anlamadan karar vermesi.</label><br>
+      <label><input type="radio" name="q6" value="Bora"> İnsanların kendini sürekli beğenmesi.</label><br>
+    </div>
+  </div>
+
+  <!-- Soru 7 -->
+  <div class="question">
+    <p>7. En büyük gücünüz nedir?</p>
+    <div class="options">
+      <label><input type="radio" name="q7" value="Dongryong"> İnsanları güldürmek ve pozitif kalmak.</label><br>
+      <label><input type="radio" name="q7" value="Junghwan"> Empatik olmak ve yardım etmek.</label><br>
+      <label><input type="radio" name="q7" value="Sunwoo"> Sorumluluk sahibi ve liderlik.</label><br>
+      <label><input type="radio" name="q7" value="Bora"> Güçlü duruşum ve kararlılığım.</label><br>
+    </div>
+  </div>
+
+  <!-- Soru 8 -->
+  <div class="question">
+    <p>8. En sevdiğiniz renk nedir?</p>
+    <div class="options">
+      <label><input type="radio" name="q8" value="Deoksun"> Kırmızı.</label><br>
+      <label><input type="radio" name="q8" value="Junghwan"> Lacivert.</label><br>
+      <label><input type="radio" name="q8" value="Dongryong"> Sarı.</label><br>
+      <label><input type="radio" name="q8" value="Taek"> Kahve.</label><br>
+    </div>
+  </div>
+
+  <!-- Soru 9 -->
+  <div class="question">
+    <p>9. Bir arkadaşınızda en çok neyi takdir edersiniz?</p>
+    <div class="options">
+      <label><input type="radio" name="q9" value="Sunwoo"> Güven ve sadakat.</label><br>
+      <label><input type="radio" name="q9" value="Deoksun"> Sevgi ve neşe.</label><br>
+      <label><input type="radio" name="q9" value="Dongryong"> Güldürme yeteneği.</label><br>
+      <label><input type="radio" name="q9" value="Bora"> İçsel güç ve liderlik.</label><br>
+    </div>
+  </div>
+
+  <!-- Soru 10 -->
+  <div class="question">
+    <p>10. Hangi meslek size hitap eder?</p>
+    <div class="options">
+      <label><input type="radio" name="q10" value="Junghwan"> Polis, asker.</label><br>
+      <label><input type="radio" name="q10" value="Taek"> Doğa bilimleri uzmanı.</label><br>
+      <label><input type="radio" name="q10" value="Dongryong"> Eğlence endüstrisi, komedyen.</label><br>
+      <label><input type="radio" name="q10" value="Sunwoo"> Ceo, prof.</label><br>
+    </div>
+  </div>
+
+  <button type="button" onclick="showResult()">Sonucu Göster</button>
+<button type="button" ontouchend="showResult()">Sonucu Göster</button>
+</form>
+
+<div class="result" id="result" style="display:none;">
+  <p>Sonuç:</p>
+  <div id="character-info" class="character-info"></div>
+  <div id="character-name" class="character"></div>
+  <div id="character-image"></div>
+</div>
+
+<script>
+  function showResult() {
+document.getElementById("result").innerHTML = "Butona tıklandı veya dokunuldu!";
+}
+<script/>
+    var form = document.forms['quiz-form'];
+    var results = {
+      'Deoksun': 0,
+      'Junghwan': 0,
+      'Taek': 0,
+      'Dongryong': 0,
+      'Sunwoo': 0,
+      'Bora': 0
+    };
+
+    // Soruları kontrol et ve sonuçları hesapla
+    for (var i = 1; i <= 10; i++) {
+      var selected = form['q' + i].value;
+      if (selected) {
+        results[selected]++;
+      }
+    }
+
+    // En yüksek sonucu bul
+    var maxResult = Object.keys(results).reduce(function(a, b) {
+      return results[a] > results[b] ? a : b;
+    });
+
+    var resultText = '';
+
+    // Sonuçlar
+    switch (maxResult) {
+      case 'Deoksun':
+        resultText = "Deoksun: Saf ve sevgi dolu bir karakter. Oldukça hassak ve tembeldir, tatlı birisin ama biraz ders çalış lütfen.";
+        document.getElementById("character-info").innerHTML = "<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMV-Z7TSTfvbmTWSRktH9kmpnn87KteVCe_uJ4OjO12UUksSJY4PZMIEE1&s=10/image.jpg' alt='Deoksun'>";
+        break;
+      case 'Junghwan':
+        resultText = "Junghwan: Soğuk görünümlü, kendi içinde hassas. Derin düşünceleri ve güçlü ruhsal yönleriyle dikkat çeker.Sevgini belli etmekten çekinme yoksa her şey için geç olabilir.";
+        document.getElementById("character-info").innerHTML = "<img src='https://64.media.tumblr.com/301c7b98e77015a4cb42ed977849c048/a1689c734e97ec10-c6/s1280x1920/4ae2062bee65d91ee7ec1fb325952342dc22834b/image.jpg' alt='Junghwan'>";
+        break;
+      case 'Taek':
+        resultText = "Taek: Huzurlu ve sakin bir karakter. Dahi olduğun kadar safsında. Sosyal ilişkilere önem vermelisin.";
+        document.getElementById("character-info").innerHTML = "<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXyeselXdb-GXrb2ddUrXPPfsyjP9QBIHCdw&s/image.jpg' alt='Taek'>";
+        break;
+      case 'Dongryong':
+        resultText = "Dongryong: Neşeli, enerjik ve arkadaş canlısı biri. Herkesi güldürmeyi sever. Hep güldüren kişiliğinin altında yatan o hüznü saklamak zorunda değilsin.";
+        document.getElementById("character-info").innerHTML = "<img src='https://m.media-amazon.com/images/M/MV5BYTYyZTNmYjctNDAxYi00NGE1LTg2NTItNTQ4NmUzMmQ4ZGRkXkEyXkFqcGc@._V1_/image.jpg' alt='Dongryong'>";
+        break;
+      case 'Sunwoo':
+        resultText = "Sunwoo: Doğal lider. Güçlü bir irade ve kararlılıkla hareket eder. Sevdikleri için canını verir. Bazen araya ihtiyacın olmalı. Sakin ol her şey senin sorumluluğunda değil.";
+        document.getElementById("character-info").innerHTML = "<img src='https://https://pbs.twimg.com/media/ETmtTuAUMAEnFJa/image.jpg' alt='Sunwoo'>";
+        break;
+      case 'Bora':
+        resultText = "Bora: Tezcanlı ve güçlü bir karakter. Zorluklarla başa çıkmada başarılı. Duygular zayıflık değildir, biraz kabuğunu kırmaya çalış ve bu kadar gergin olma.";
+        document.getElementById("character-info").innerHTML = "<img src='https://https://i.pinimg.com/736x/cb/9d/59/cb9d596404bad12bc4a374d2cd0ecf35/image.jpg' alt='Bora'>";
+        break;
+    }
+
+    document.getElementById("result").style.display = "block";
+    document.getElementById("character-name").textContent = maxResult;
+    document.getElementById("result").innerHTML += "<p>" + resultText + "</p>";
+  }
+</script>
+
+</body>
+</html>
